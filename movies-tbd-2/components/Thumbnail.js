@@ -11,7 +11,7 @@ function Thumbnail({ results }) {
                 `${img_url}${results.backdrop_path}`
             } height={1080} width={1920} />
             <div className='p-2'>
-                <h2 className="m-1 text-2xl group-hover:font-bold transition-all duration-200 ease-in-out">{results.title || results.orignal_name}</h2>
+                <h2 className="m-1 text-2xl group-hover:font-bold transition-all duration-200 ease-in-out">{results.original_name || results.title}</h2>
                 <p className="truncate max-w-lg">{results.overview}</p>
                 <p className='flex item-center opacity-0 group-hover:opacity-100'>
                     {results.media_type && `${results.media_type.toUpperCase()}`}{" "}
